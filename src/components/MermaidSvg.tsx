@@ -16,18 +16,35 @@ mermaid.initialize({
         background: CiniaColors.white,
         primaryColor: CiniaColors.gray,
         primaryTextColor: CiniaColors.blue,
+        // secondaryColor: CiniaColors.blue,
         textColor: CiniaColors.blue,
-        mainBkg: CiniaColors.white,
-        fontSize: "12px",
+        mainBkg: CiniaColors.gray,
+        lineColor: CiniaColors.darkGray,
+        fontSize: "20px",
+        xyChart: {
+            plotColorPalette: `${CiniaColors.gray}, ${CiniaColors.pie1}, ${CiniaColors.pie2}, ${CiniaColors.pie3}, ${CiniaColors.pie4}`,
+            xAxisTickColor: CiniaColors.black,    
+            yAxisTickColor: CiniaColors.black,    
+        }
+        
+        
     },
     gantt: {
         titleTopMargin: 25,
         topPadding: 50,
         barHeight: 30,
-        barGap: 4,
-        leftPadding: 150,
-        fontSize: 12
+        barGap: 8,
+        leftPadding: 175,
+        fontSize: 20,
+        sectionFontSize: 10,
+        numberSectionStyles: 2,
+        gridLineStartPadding: 50,
+        topAxis: true,
+        weekday: "monday",
 
+    },
+    xyChart: {
+        
     }
     
 });
